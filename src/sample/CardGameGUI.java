@@ -27,7 +27,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
     /** Height of the game frame. */
     private static final int DEFAULT_HEIGHT = 302;
     /** Width of the game frame. */
-    private static final int DEFAULT_WIDTH = 800;
+    private static final int DEFAULT_WIDTH = 850;
     /** Width of a card. */
     private static final int CARD_WIDTH = 73;
     /** Height of a card. */
@@ -214,18 +214,18 @@ public class CardGameGUI extends JFrame implements ActionListener {
         statusMsg.setBounds(LABEL_LEFT, LABEL_TOP, 250, 30);
 
         winMsg = new JLabel();
-        winMsg.setBounds(LABEL_LEFT, LABEL_TOP + LABEL_HEIGHT_INC, 200, 30);
+        winMsg.setBounds(LABEL_LEFT, LABEL_TOP + LABEL_HEIGHT_INC, 350, 30);
         winMsg.setFont(new Font("SansSerif", Font.BOLD, 25));
         winMsg.setForeground(Color.GREEN);
-        winMsg.setText("You win!");
+        winMsg.setText("Jack, you won!");
         panel.add(winMsg);
         winMsg.setVisible(false);
 
         lossMsg = new JLabel();
-        lossMsg.setBounds(LABEL_LEFT, LABEL_TOP + LABEL_HEIGHT_INC, 200, 30);
+        lossMsg.setBounds(LABEL_LEFT, LABEL_TOP + LABEL_HEIGHT_INC, 350, 30);
         lossMsg.setFont(new Font("SanSerif", Font.BOLD, 25));
         lossMsg.setForeground(Color.RED);
-        lossMsg.setText("Sorry, you lose.");
+        lossMsg.setText("Jack, you didn't win.");
         panel.add(lossMsg);
         lossMsg.setVisible(false);
 

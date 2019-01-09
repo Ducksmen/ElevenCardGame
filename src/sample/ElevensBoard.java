@@ -130,4 +130,15 @@ public class ElevensBoard extends Board {
         }
         return (j && q && k);
     }
+
+    /**
+     * Prints all the non-null cards on the board.
+     * @param board Any ElevensBoard board.
+     */
+    public static void printCards(ElevensBoard board) {
+        List<Integer> cIndexes = board.cardIndexes();
+        for (int i : cIndexes) {
+            System.out.println(board.cardAt(i));
+        }
+    }
 }
